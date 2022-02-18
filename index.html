@@ -1,156 +1,505 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Millanetti Bakery </title>
-<lang = 'en-us'>
+  <title>Laura's Super Amazing Page</title>
+
+  <style>
+  @import url("https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kranky&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap');
+
+body {
+  font-family: "Sue Ellen Francisco", cursive;
+  font-size: 40px;
+  background-color: rgb(245, 236, 228);
+  background-image: url(https://i.ibb.co/KztbKDb/zigzag.png);
+  color: rgb(41, 47, 47);
+}
+
+h1 {
+  font-family: 'Mountains of Christmas', cursive;
+  font-size: 130px;
+/*   margin: 0 50%; */
+  width: 500px;
+}
+h2 {
+  font-family: "Sue Ellen Francisco", cursive;
+  margin: 0;
+}
+
+h3{
+ font-family: 'Mountains of Christmas', cursive;
+ font-size:40px;
+ margin: 0;
+ padding: 20px;
+}
+
+h4{
+ font-family: "Sue Ellen Francisco", cursive;
+ font-size:35px;
+ text-align: center;
+
+}
+
+.intro {
+ padding-top: 60px;
+ padding-bottom: 20px;
+}
+
+p {
+  margin: 0;
+}
+
+p1 {
+  font-family: font-family: 'Kranky', cursive;;
+  font-size: 30px;
+  margin:0;
+}
+.small {
+  font-family: "Sue Ellen Francisco", cursive;
+  font-size: small;
+  color: black;
+}
+.logo {
+  position: absolute;
+  top: 25px;
+  right: 1150px;
+  width: 200px;
+}
+.box {
+  width: 1650px;
+  margin: 0 auto;
+  height: 140px;
+  padding-top: 10px;
+  padding-left: 500px;
+  background-color: #C5ACA1;
+}
+
+.box10 {
+  width: 1650px;
+/*   height: 1200px; */
+  padding-top: 150px;
+  padding-bottom: 50px;
+/*   padding-left: 60px; */
+  background-color: #e6f9ff;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.box ul {
+  display: flex;
+  list-style-type: none;
+}
+.box ul li {
+  width: 130px;
+}
+
+.box ul li a {
+  font-size: 32px;
+  font-family: "Arsenica", serif;
+  color: white;
+  text-decoration: none;
+}
+
+.grid-container {
+  grid-column-gap: 20px;
+}
+
+.box1 {
+  background-color: #ddd;
+}
+.box2 {
+  background-color: #ccc;
+}
+.box3 {
+  background-color: #ddd;
+}
+.box4 {
+  background-color: #ccc;
+}
+
+.box5{
+  background-color: #ddd;
+}
+
+.box6 {
+  background-color: #ccc;
+}
+
+.box7 {
+  background-color: #ddd;
+}
+
+
+.container {
+  text-align: center;
+}
+
+.text {
+  width: 80%;
+  line-height: 50px;
+  display: inline-block;
+}
+
+.image {
+  margin: 0 70px;
+  display: inline-block;
+
+}
+
+button {
+  border: none;
+  outline: none;
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+  margin:0;
+}
+
+button: hover{
+  background-color: #ffd9b3;
+  color: white;
+}
+
+main {
+  width: 1700px;
+  margin: 0 auto;
+  background-color: #F4ECE4;
+  padding: 0 25px;
+}
+
+
+.nav {
+  padding: 35px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.nav div {
+  flex: 1 0 30%;
+  border-radius: 25px;
+  box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.15);
+  text-align: center;
+  transition: background-color 0.25s ease;
+}
+
+.nav div a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav div:hover {
+  background-color: #70dbdb;
+}
+
+.header {
+  background-color: rgba(151, 153, 176, 0.67);
+  color: black;
+  margin: 0 -25px;
+  padding-left: 25px;
+  height: 100px;
+  margin-bottom: 100px;
+  margin-top: 40px;
+}
+
+.header-title {
+  background-color: white;
+  height: 100px;
+  width: 300px;
+  position: relative;
+  top: 65px;
+  left: 80px;
+
+}
+
+.header-leave {
+  position: absolute;
+  width: 250px;
+  z-index: 1;
+  left: 260px;
+  margin-top: -80px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  width: 1200px;
+  margin-left: 170px;
+}
+
+.gallery > * {
+  flex: 1 0 35%;
+  border-radius: 25px;
+  box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.15);
+}
+
+.gallery1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  width: 1200px;
+  margin-left: 200px;
+}
+
+.gallery1 > * {
+  flex: 1 0 25%;
+  border-radius: 0px;
+  box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.15);
+}
+
+.gallery2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  width: 1200px;
+  margin-left: 200px;
+}
+
+.gallery2 > * {
+  flex: 0 0 20%;
+  border-radius: 0px;
+  shadow: 0px 2px 5px 2px rgba(0,0,0,0.15);
+}
+
+.gallery3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  width: 1200px;
+  margin-left: 200px;
+}
+
+.gallery3 > * {
+  flex: 1 0 25%;
+  border-radius: 0px;
+  shadow: 0px 2px 5px 2px rgba(0,0,0,0.15);
+}
+
+.gallery4 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 500px;
+  margin-left:20px;
+}
+
+.gallery4 > * {
+  flex: 0 0 20%;
+  border-radius: 0px;
+  box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.15);
+}
+
+  </style>
 </head>
 
 <body>
-<p style = 'color:green'></p>
-<header>
-  <center><i><h1 style="color: purple">Sparkling Bakery</h1></i></center>
-  <h2>We bake ridiculous delicious cakes, cupcakes & sweet bites</h2>
-  <img src="img/Sweets5.jpeg" width="700px"/>
-<p></p>
-</header>
-<pre>
-"Cookery is not chemistry. It is an art.
-It requires instinct and taste rather than exact measurements"
-- Marcel Boulestin.
-</pre>
+  <nav class="box">
+    <ul class='homebar'>
+      <li><a href="#first">Home</a></li>
+      <li><a href="#second">About</a></li>
+      <li><a href="#third">Shop</a></li>
+      <li><a href="#fourth">Brand</a></li>
+      <li><a href="#fifth">Contact</a></li>
+    </ul>
+  </nav>
 
-<h1>Table of Contents</h1>
-<ol>
-<li><a href="#Cakes">Cakes</a></li>
-<li><a href="#Cupcakes">Cupcakes</a></li>
-<li><a href="#Brownies">Brownies</a></li>
-<li><a href="#Cookies">Cookies</a></li>
-<li><a href="#Lolipops">Lolipops</a></li>
-</ol>
+  <img class="logo" src="https://i.ibb.co/x2H0xCs/VILLA-LOGO-PNG.png" alt="Pini - Photo">
 
-<br>
-<h2>Our Products</h2>
-<br>
+  <nav class="box10">
+    <div class="image">
+      <img src="https://i.ibb.co/3WWfxxy/Captura-de-Pantalla-2022-01-31-a-la-s-10-10-29-p-m.png" alt="Captura-de-Pantalla-2022-01-31-a-la-s-10-10-29-p-m" border="0" width="500px">
+    </div>
+    <h1>VILLA <br> DESIGNS</h1>
 
-<main>
-<section>
+  </nav>
+  <main>
 
-<article>
-<h2 id="Cakes"> Cakes </h2>
-<img src="img/Cakes.jpeg" width="300px" />
-<p>Super "K" are our fabulous cakes! Our cakes are glutten free products that works with other types of ingredients such as dairy, nuts, water and eggs. We are famous because of our healthiest and exquisit cakes over the town. We also offer delivery to your door for special occations like, birthdays, dinner parties, weddings, celebrations, or some special moments to enjoy at home! </p>
-<ul>
-  <li>Chocolate</li>
-  <li>Vanilla</li>
-  <li>Caramel</li>
-  <li>Velvel Revolver</li>
-  <li>Carrot</li>
-  <li>Vegan</li>
-</ul>
-</article>
-<hr/>
-<article>
-<h2 id="Cupcakes"> Cupcakes </h2>
-<img src="img/cupcake.jpeg" width="300px"/>
-<p>Our Cup-Cakes menu are famous because we offer a selection of classical and seasonal cupcakes. Each cupcake is topped high with icing swirls, frosting and buttercream. We design custom cakes and cupcakesfor any occasion, dont miss yours! </p>
+    <div class="container">
+      <div class="text">
+        <h2 id="intro" class="intro">About me</h2>
+        <p1>Hi, my name is <b><i>Laura!</b> and I am a <i>freelance designer student</i>. Welcome to my amazing page.</p1>
+        <p1>My work mostly focuses on hand drawn illustrations from real life photo's.
+          Since previous years, I have dedicated myself to the work of psychology, which allows her to have a more sensitive and objective view of design, understanding human behavior and its diverse needs at a cultural and social level. I have always been passionate about my work on a social level and my creativity, which has allowed me to develop artistic and flexible tools in the educational field favoring diversity and social inclusion. Within my medium-term projects, I hope to be part of a creative company where I can integrate my two elements of this professional training, psychology and graphic design - illustration.To see more of my work click bellow.</p1>
+        <button href="https://www.villadesigns.org/">Click here!</button>
+      </div>
 
-<ul>
-  <li>Chocolate</li>
-  <li>Vanilla</li>
-  <li>Caramel</li>
-  <li>Velvel Revolver</li>
-  <li>Carrot</li>
-  <li>Vegan</li>
-</ul>
-</article>
-<hr/>
-<article>
-<h2 id="Brownies"> Brownies </h2>
-<img src="img/Brownie.jpeg" width="300px" />
-<p>Brownie Browns are our famous brownies! Brownie Browns are pretty much the fudgiest, most chocolatey and sweet things ever. Our Brownie Browns can also be ordered and personalized with different filled: chocolate chips, nuts, raisings, coconut, nutella, dulce de leche, brigadeiro and white chocolate.</p>
-<ul>
-  <li>Chocolate</li>
-  <li>Vanilla</li>
-  <li>Caramel</li>
-  <li>Velvel Revolver</li>
-  <li>Carrot</li>
-  <li>Vegan</li>
-</ul>
-</article>
-<hr/>
-<article>
-<h2 id="Cookies">Cookies </h2>
-<img src="img/Cookies3.jpeg" width="300px" />
-<P>Cook-iess! Are our most famous products! Send sweet holiday greetings with these hand-decorated butter cookie cut-outs. They're made from scratch in small batches using only the finest Madagascar Bourbon Vanilla, freshly cracked eggs, butter, sugar, and hand mixed royal icing. Each cookie is individually wrapped in a cello bag and tied with a matching ribbon.</p>
-<ul>
-  <li>Chocolate</li>
-  <li>Vanilla</li>
-  <li>Caramel</li>
-  <li>Velvel Revolver</li>
-  <li>Carrot</li>
-  <li>Vegan</li>
-</ul>
-</article>
-<hr/>
-<article>
-<h2 id="Lolipops"> Lolipops </h2>
-<img src="img/iStock-951100466.jpeg" width="300px" />
-<p>Tender and chewy with crispy and gooey centers, our freshly lilopops are sweet perfection, delivered. Handmade with the finest butter, cream, chocolate and other craveable goodies, there’s a favorite flavor for everyone! And our gluten-free, keto and vegan varieties are just as yummy!</p>
-<ul>
-  <li>Chocolate</li>
-  <li>Vanilla</li>
-  <li>Caramel</li>
-  <li>Velvel Revolver</li>
-  <li>Carrot</li>
-  <li>Vegan</li>
-</ul>
-</article>
-<br></br>
+    </div>
 
-<hr/>
+    <div class="nav">
+      <div class='box1'><a href="#gal">Illustrations</a></div>
+      <div class='box2'><a href="#identity">Visual Identity</a></div>
+      <div class='box3'><a href="#corporativeidentity">Corporative Identity</a></div>
+      <div class='box4'><a href="#catalogues">Catalogues</a></div>
+      <div class='box5'><a href="#photoshop">Photoshop</a></div>
+      <div class='box6'><a href="bookcover">Book Cover</a></div>
+    </div>
 
-  <center><h1> Personalized Your Order </h1></center>
-  <h2> Mini Cake Boxes </h2>
-  <ul>
-    <li>Mini $22</li>
-    <li>Small $32</li>
-    <li>Medium $42</li>
-    <li>Large $52</li>
-  </ul>
+    <div class="header" id="gal">
+      <img src="https://i.ibb.co/kXP9GSh/leaves-green-01.png" alt="leaves-green-01" border="0" alt="Captura-de-Pantalla-2022-01-31-a-la-s-10-10-29-p-m" class="header-leave">
 
-<h2> Mini Cupcake Boxes</h2>
-<ul>
-  <li>Mini $22</li>
-  <li>Small $32</li>
-  <li>Medium $42</li>
-  <li>Large $52</li>
-</ul>
+      <div class="header-title">
+        <h3>Illustrations</h3>
+      </div>
 
-<h2> Mini Brownies Boxes</h2>
-<ul>
-  <li>Mini $22</li>
-  <li>Small $32</li>
-  <li>Medium $42</li>
-  <li>Large $52</li>
-</ul>
+    </div>
+    <div class="gallery">
+      <img src="https://i.ibb.co/74hNPPC/vd-illustration-martin-photo.jpg" alt="Illustrator-Martin-Ny" width="350" />
+      <img src="https://i.ibb.co/cxjycVV/vd-illustration-martin-drawn.png" alt="Illustrator-Pinni" width="350" />
+      <img src="https://i.ibb.co/5Wq4wQ6/Captura-de-Pantalla-2021-07-21-a-la-s-6-29-53-p-m.png" alt="Captura-de-Pantalla-2021-07-21-a-la-s-6-29-53-p-m" width="350" />
+      <img src="https://i.ibb.co/nQDF9j4/Africa-01.png" alt="Africa-01" border="0" width="300" />
+      <img src="https://i.ibb.co/SRQTF3T/Captura-de-Pantalla-2021-07-21-a-la-s-6-39-50-p-m.png" alt="Captura-de-Pantalla-2021-07-21-a-la-s-6-39-50-p-m" width="300" />
+      <img src="https://i.ibb.co/qRfNtRK/Illustration-Pinni.jpg" alt="Illustration-Pinni" width="300" />
+      <img src="https://i.ibb.co/NWmzfDS/Captura-de-Pantalla-2021-07-21-a-la-s-6-30-38-p-m.png" alt="Captura-de-Pantalla-2021-07-21-a-la-s-6-30-38-p-m" width="300" />
+      <img src="https://i.ibb.co/FqYfLj9/Martin-I-Amsterdam-01.png" alt="Martin-I-Amsterdam-01" width="350" />
+      <img src="https://i.ibb.co/xYp6b2b/Captura-de-Pantalla-2021-07-21-a-la-s-6-16-06-p-m.png" alt="Captura-de-Pantalla-2021-07-21-a-la-s-6-16-06-p-m" width="350" />
+      <img src="https://i.ibb.co/7GF9mqw/Metulips-01.png" alt="Metulips-01" width="350" />
+      <img src="https://i.ibb.co/92YT6Mt/Captura-de-Pantalla-2021-07-21-a-la-s-6-29-21-p-m.png" alt="Captura-de-Pantalla-2021-07-21-a-la-s-6-29-21-p-m" width="350" />
+      <img src="https://i.ibb.co/WcJd7H5/Abuelo-01.png" alt="Abuelo-01" width="350" />
+      <img src="https://i.ibb.co/8PS2mxz/IMG-67161.jpg" alt="IMG-67161" width="350" />
+      <img src="https://i.ibb.co/KzGT3Bk/Wedding-illustration-01.png" alt="Wedding-illustration-01" width="350" />
+      <img src="https://i.ibb.co/jwZSgGf/Captura-de-Pantalla-2021-07-21-a-la-s-6-40-19-p-m.png" alt="Captura-de-Pantalla-2021-07-21-a-la-s-6-40-19-p-m" width="350" />
+      <img src="https://i.ibb.co/Srn0TjR/Illustrator-Me-Vienna-01.png" alt="Illustrator-Me-Vienna-01" width="350" />
+      <img src="https://i.ibb.co/Gcwn643/Weeding-Illustration-violeta-01.jpg" alt="Weeding-Illustration-violeta-01" width="350" /> <br>
+      </div>
+      <br>
 
-<h2> Mini Cookie Boxes</h2>
-<ul>
-  <li>Mini $22</li>
-  <li>Small $32</li>
-  <li>Medium $42</li>
-  <li>Large $52</li>
-</ul>
 
-  <h2> Mini Lolipop Boxes</h2>
-  <ul>
-    <li>Mini $22</li>
-    <li>Small $32</li>
-    <li>Medium $42</li>
-    <li>Large $52</li>
-  </ul>
-</ul>
-</main>
-<center><footer>Copyright 2021-2022 Laura Varela</footer></center>
+
+      <div class="header" id="gal">
+        <img src="https://i.ibb.co/kXP9GSh/leaves-green-01.png" alt="leaves-green-01" border="0" alt="Captura-de-Pantalla-2022-01-31-a-la-s-10-10-29-p-m" class="header-leave">
+
+     <div class="header" id="identity">
+        <div class="header-title">
+          <h3>Visual Identity</h3>
+        </div> <br>
+     </div>
+
+    <div class="gallery1">
+      <img src="https://i.ibb.co/j5CwgD8/LV-Buisness-Card10-Mesa-de-trabajo-1.jpg" alt="LV-Buisness-Card10-Mesa-de-trabajo-1" width="350" />
+    <img src="https://i.ibb.co/mzm7BtH/LV-Buisness-Card10-02.jpg" alt="LV-Buisness-Card10-02" width="350" />
+        <img src="https://i.ibb.co/cvS1CDS/LV-Buisness-Card6-Mesa-de-trabajo-1.jpg" alt="LV-Buisness-Card6-Mesa-de-trabajo-1" width="350" />
+        <img src="https://i.ibb.co/RH0RyfH/LV-Buisness-Card6-02.jpg" alt="LV-Buisness-Card6-02" width="350" />
+        <img src="https://i.ibb.co/v1pcXgL/LV-Buisness-Card1-Mesa-de-trabajo-1.jpg" alt="LV-Buisness-Card1-Mesa-de-trabajo-1" width="350" />
+      <img src="https://i.ibb.co/X46rN8W/LV-Buisness-Card1-02.jpg" alt="LV-Buisness-Card1-02" width="350" />
+      <img src="https://i.ibb.co/nsnMwV2/LV-Buisness-Card8-Mesa-de-trabajo-1.jpg" alt="LV-Buisness-Card8-Mesa-de-trabajo-1" width="350" />
+      <img src="https://i.ibb.co/z6GLpDX/LV-Buisness-Card8-02.jpg" alt="LV-Buisness-Card8-02" width="350" />
+      <img src="https://i.ibb.co/WD9fFyM/LV-Buisness-Card7-Mesa-de-trabajo-1.jpg" alt="LV-Buisness-Card7-Mesa-de-trabajo-1" width="350" />
+      <img src="https://i.ibb.co/zmn8Sx1/LV-Buisness-Card7-02.jpg" alt="LV-Buisness-Card7-02" width="350" />
+      <img src="https://i.ibb.co/LCdDz2k/LV-Buisness-Card12-Mesa-de-trabajo-1.jpg" alt="LV-Buisness-Card12-Mesa-de-trabajo-1" width="350" />
+      <img src="https://i.ibb.co/n3mns8P/LV-Buisness-Card12-02.jpg" alt="LV-Buisness-Card12-02" width="350" />
+      <img src="https://i.ibb.co/X88HYSj/LV-Buisness-Card2-Mesa-de-trabajo-1.jpg" alt="LV-Buisness-Card2-Mesa-de-trabajo-1" width="350" />
+      <img src="https://i.ibb.co/VMHs4Vz/LV-Buisness-Card2-02.jpg" alt="LV-Buisness-Card2-02" width="350" />
+      <img src="https://i.ibb.co/sR64cd4/LV-Buisness-Card4-Mesa-de-trabajo-1.jpg" alt="LV-Buisness-Card4-Mesa-de-trabajo-1" width="350" />
+      <img src="https://i.ibb.co/xgLLTmv/LV-Buisness-Card4-02.jpg" alt="LV-Buisness-Card4-02" width="350" />
+      <img src="https://i.ibb.co/fYj9BBR/LV-Buisness-Card9-Mesa-de-trabajo-1.jpg" alt="LV-Buisness-Card9-Mesa-de-trabajo-1" width="350" />
+      <img src="https://i.ibb.co/Dp56vq7/LV-Buisness-Card9-02.jpg" alt="LV-Buisness-Card9-02" width="350" />
+        </div><br>
+
+
+    <div class="header" id="gal">
+        <img src="https://i.ibb.co/kXP9GSh/leaves-green-01.png" alt="leaves-green-01" border="0" alt="Captura-de-Pantalla-2022-01-31-a-la-s-10-10-29-p-m" class="header-leave">
+
+       <div class="header" id="corporativeidentity">
+        <div class="header-title">
+          <h3>Corporative Identity</h3>
+        </div> <br>
+
+      <div class="gallery2">
+      <img src="https://i.ibb.co/k1wdnFh/VILLA-LOGO-PNG.png" alt="VILLA-LOGO-PNG" width="100" />
+        <img src="https://i.ibb.co/71HjfZb/LOGO5-LETSEAT-PNG.png" alt="LOGO5-LETSEAT-PNG" width="100" />
+        <img src="https://i.ibb.co/xFL2w8w/FREEWOMAN-LOGO7.png" alt="FREEWOMAN-LOGO7" width="100" />
+        <img src="https://i.ibb.co/bdJwPpJ/VILLA-DESIGN2-PNG.png" alt="VILLA-DESIGN2-PNG" width="100" />
+        <img src="https://i.ibb.co/mtf1mZj/HONEY-LOGO5.png" alt="HONEY-LOGO5" width="100" />
+        <img src="https://i.ibb.co/wpNNnGS/VILLA-LOGO3-PNG.png" alt="VILLA-LOGO3-PNG" width="100" />
+        <img src="https://i.ibb.co/g9hkbKB/Logo2.png" alt="Logo2" width="100" />
+        <img src="https://i.ibb.co/85RRTVd/FREEWOMAN-LOGO6.png" alt="FREEWOMAN-LOGO6" width="100" />
+        <img src="https://i.ibb.co/J3g57Jq/ETSLogo3.png" alt="ETSLogo3" width="100" />
+        <img src="https://i.ibb.co/yPFYV9k/ETSLogo9.png" alt="ETSLogo9" width="100" />
+        <img src="https://i.ibb.co/Ss671Pb/ETSLogo7.png" alt="ETSLogo7" width="100" />
+        <img src="https://i.ibb.co/t4R0m13/ETSLogo1.png" alt="ETSLogo1" width="100" /></div><br>
+
+
+
+     <div class="header" id="gal">
+        <img src="https://i.ibb.co/kXP9GSh/leaves-green-01.png" alt="leaves-green-01" border="0" alt="Captura-de-Pantalla-2022-01-31-a-la-s-10-10-29-p-m" class="header-leave">
+       <div class="header" id="catalogues">
+        <div class="header-title">
+          <h3>Catalogues</h3>
+        </div> <br>
+
+       <h4>Fashion Catalogue</h4>
+       <div class="gallery3">
+       <img src="https://i.ibb.co/mhWTbRs/LV-W13-D3-Indesign-Fall-Fashion-Catalog-Project.jpg" alt="LV-W13-D3-Indesign-Fall-Fashion-Catalog-Project" width="80px"; /><br>
+         <img src="https://i.ibb.co/KGRkwsH/LV-W13-D3-Indesign-Fall-Fashion-Catalog-Project2.jpg" alt="LV-W13-D3-Indesign-Fall-Fashion-Catalog-Project2" width="80px"; />
+      <img src="https://i.ibb.co/QnZ12Pt/LV-W13-D3-Indesign-Fall-Fashion-Catalog-Project3.jpg" alt="LV-W13-D3-Indesign-Fall-Fashion-Catalog-Project3" width="80px" />
+         <img src="https://i.ibb.co/MV4h2gZ/LV-W13-D3-Indesign-Fall-Fashion-Catalog-Project4.jpg" alt="LV-W13-D3-Indesign-Fall-Fashion-Catalog-Project4" width="40px" />
+         <img src="https://i.ibb.co/dgh6HVw/LV-W13-D3-Indesign-Fall-Fashion-Catalog-Project5.jpg" alt="LV-W13-D3-Indesign-Fall-Fashion-Catalog-Project5" width="40px" />
+        </div>
+
+         <h4>Interior Design Catalogue</h4>
+         <div class="gallery3">
+         <img src="https://i.ibb.co/q0b8J2h/LV-In-Design-Catalogue-Mode-Home.jpg" alt="LV-In-Design-Catalogue-Mode-Home" width="400px" />
+         <img src="https://i.ibb.co/C5TjnSF/LV-W14-D3-In-Design-Catalogue-Mode-Home2.jpg" alt="LV-W14-D3-In-Design-Catalogue-Mode-Home2" width="800px" />
+         <img src="https://i.ibb.co/3swCqN2/LV-W14-D3-In-Design-Catalogue-Mode-Home3.jpg" alt="LV-W14-D3-In-Design-Catalogue-Mode-Home3" alt="LV-W14-D3-In-Design-Catalogue-Mode-Home2" width="800px" />
+         <img src="https://i.ibb.co/dLCS6SW/LV-W14-D3-In-Design-Catalogue-Mode-Home4.jpg" alt="LV-W14-D3-In-Design-Catalogue-Mode-Home4" alt="LV-W14-D3-In-Design-Catalogue-Mode-Home3" width="800px" />
+         </div>
+
+          <div class="header" id="photoshop">
+        <img src="https://i.ibb.co/kXP9GSh/leaves-green-01.png" alt="leaves-green-01" border="0" alt="Captura-de-Pantalla-2022-01-31-a-la-s-10-10-29-p-m" class="header-leave">
+       <div class="header" id="photoshop">
+        <div class="header-title">
+          <h3>Photoshop</h3>
+
+      <div class="gallery1"><br>
+      <img src="https://i.ibb.co/Xk6xN4M/Martin-Trees.jpg" alt="Martin-Trees" width="350" />
+      <img src="https://i.ibb.co/tX5JT6T/LV-W14-D4-Glow-Effect-Photoshop2.jpg" alt="LV-W14-D4-Glow-Effect-Photoshop2" width="350" />
+       <img src="https://i.ibb.co/YpkhCCm/LV-W14-D4-Glow-Effect-Photoshop.jpg" alt="LV-W14-D4-Glow-Effect-Photoshop" width="350" />
+        <img src="https://i.ibb.co/FWf4pJG/LV-Movie-Poster2.jpg" alt="LV-Movie-Poster2" width="350" />
+        <img src="https://i.ibb.co/KXn7gKr/LV-Movie-Poster3.jpg" alt="LV-Movie-Poster3" width="350" />
+      <img src="https://i.ibb.co/KDyWKbC/LV-W9-D4-P1-Photoshop-Collage-Project-JPEG-2.jpg" alt="LV-W9-D4-P1-Photoshop-Collage-Project-JPEG-2" width="350" />
+          </div>
+      <br>
+
+
+    <div class="header" id="bookcover">
+      <img src="https://i.ibb.co/kXP9GSh/leaves-green-01.png" alt="leaves-green-01" border="0" alt="Captura-de-Pantalla-2022-01-31-a-la-s-10-10-29-p-m" class="header-leave">
+
+      <div class="header-title">
+        <h3>Book Cover</h3>
+      </div>
+
+    </div>
+    <div class="gallery4">
+          <img src="https://i.ibb.co/7G1hKf4/LV-W5-D1-Project3-Book-Cover-Mesa-de-trabajo-1.jpg" alt="LV-W5-D1-Project3-Book-Cover-Mesa-de-trabajo-1" width="700" />
+      <img src="https://i.ibb.co/RSdfhBj/LV-W5-D1-Project3-Book-Cover-04.jpg" alt="LV-W5-D1-Project3-Book-Cover-04" width="700" />
+       <img src="https://i.ibb.co/nbNDRvD/LV-W5-D1-Project3-Book-Cover-03.jpg" alt="LV-W5-D1-Project3-Book-Cover-03" width="700" />
+
+        </div> <br>
+
+
+
+
+
+
+
+
+
+
+        <div>
+        <h2 id="contact">Contact</h2>
+        <p class="small">Please contact me at Laura.Varela@students.first.edu</p>
+          </div>
+  </main>
+  <footer>
+    <p class="small">Copyright Laura Varela 2022</p>
+    <center>&copy; 2022 Villa Illustrations</center>
+  </footer>
 </body>
+
 </html>

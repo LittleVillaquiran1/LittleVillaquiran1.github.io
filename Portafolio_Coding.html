@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+/* Styling for main container */
+.flex-container{
+  display: flex;
+  height: 100vh;
+}
+
+/* Fixed Image Column Styling */
+.fixed{
+  background-image: url(https://i.ibb.co/Jr0JzT0/Tulips.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  flex: 0 0 40%;
+}
+
+/* Content Styling (Scroll) */
+.content{
+  overflow-y: auto;
+  flex: 0 0 60%;
+  background-color: #fff;
+}
+
+/* Intro Content */
+header{
+  margin-top: 50px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Download resume button */
+.resume{
+  border: none;
+  padding: 12px 32px;
+  font-size: 12px;
+  background-color: #aaa;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Resume btn hover effect */
+.resume:hover{
+  background-color: #55EFFF;
+}
+
+/* Heading 2 */
+h2{
+  margin-left: 20px;
+}
+
+/* Styling for the horizontal rule */
+hr{
+  width: 95%;
+  border: .4px solid #ddd;
+  margin-bottom: 30px;
+}
+
+/* Photo Gallery row styling */
+.row-p{
+  display: flex;
+}
+
+/* Photo Gallery column styling */
+.column-p{
+  flex: 50%;
+  padding: 0px 8px;
+}
+
+/* Photo Gallery img styling */
+.column-p img{
+  width: 100%;
+}
+
+/* ContentSpacer */
+.spacer{
+  margin-top: 60px;
+}
+
+/* About Section */
+.about{
+  padding: 12px 32px;
+}
+
+/* Skills spacing */
+.skills{
+  margin-top: 50px;
+}
+/* Progress Bar styling */
+.skills p{
+  letter-spacing: 4px;
+  margin-left: 20px;
+}
+
+.illus, .webdev, .photo, .inde, .ux-ui{
+margin-top: 40px;
+}
+
+.illuskill, .webskill, .photoskill, .inskill, .uxuiskill{
+  margin-left: 50px;
+  background-color: rgb(222,222,222);
+  width: 80%;
+  border-radius: 3px;
+}
+
+.illustrator{
+  background-color: #55EFFF;
+  padding: 1%;
+  text-align: right;
+  font-size: 20px;
+  border-radius: 3px;
+  width: 75%;
+  color: grey;
+}
+
+.webbar{
+  background-color: #55EFFF;
+  padding: 1%;
+  text-align: right;
+  font-size: 20px;
+  border-radius: 3px;
+  width: 65%;
+  color: grey;
+}
+
+ .photoshop{
+  background-color: #55EFFF;
+  padding: 1%;
+  text-align: right;
+  font-size: 20px;
+  border-right: 3px;
+  width: 55%;
+  color: grey;
+}
+
+ .indesign{
+  background-color: #55EFFF;
+  padding: 1%;
+  text-align: right;
+  font-size: 20px;
+  border-right: 3px;
+  width: 70%;
+  color: grey;
+}
+
+ .uxui{
+  background-color: #55EFFF;
+  padding: 1%;
+  text-align: right;
+  font-size: 20px;
+  border-right: 3px;
+  width: 60%;
+  color: grey;
+}
+
+/* Progressbar Styling end */
+
+/* Accolade styling */
+.accolades{
+  height: 160px;
+  display: flex;
+  width: 80%;
+  background-color: #F5DF60;
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.accolades p{
+  line-height: 60px;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  color: grey;
+  border-right: 1px solid grey;
+}
+
+.accolades p:last-child{
+  border-right: none;
+}
+
+.resume2{
+  border: none;
+  padding: 12px 22px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 10px;
+  background-color: #ddd;
+  cursor: pointer;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.resume2:hover{
+  background-color: #55EFFF;
+}
+
+
+
+
+</style>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Main Flexbox Container -->
+<main class="flex-container">
+
+<!--  Fixed Image Column  -->
+  <div class="fixed"></div>
+<!--   End Fixed Image -->
+
+<!--  Content Column  -->
+  <div class="content">
+<!-- Inro Content  -->
+    <header>
+    <h1>Laura Varela Villaquiran</h1>
+    <p>Graphic Designer & Web Developer</p>
+    <button class='resume'><i class="fa fa-download"></i>  Download Resume</button>
+    </header>
+<!--  End Intro   -->
+
+<!--   Gallery Start   -->
+    <h2>My Portfolio</h2>
+    <hr>
+    <section class="portfolio">
+      <div class="row-p">
+        <div class="column-p">
+          <img src="https://i.ibb.co/vkSFkTg/Illustration-Pinni.jpg" alt="">
+          <img src="https://i.ibb.co/rF9tpxn/Martin-Devillers-Portrait.png" alt="">
+          <img src="https://i.ibb.co/JRfKjK3/Illustrator-Me-Vienna-01.png" alt="">
+        </div>
+        <div class="column-p">
+          <img src="https://i.ibb.co/VQH8mQX/Martin-I-Amsterdam-01.png" alt="">
+          <img src="https://i.ibb.co/xXxHNWB/Africa-01.png"  alt="">
+          <img src="https://i.ibb.co/TqJ0NCP/Metulips-01.png" alt="">
+          </div>
+      </div>
+    </section>
+
+          <br>
+         <img src="https://i.ibb.co/qxWfJHR/womanstars.jpg" alt="womanstars" alt="">
+
+   <img src="https://i.ibb.co/BN3bVJr/Glow-Effect-Before-After.png" alt="Glow-Effect-Before-After">
+
+      <img src="https://i.ibb.co/8BDdHPC/Split-Movie-Poster-Before-After.jpg" alt="Split-Movie-Poster-Before-After">
+
+
+<!--   Gallery End   -->
+
+<!--    Text Start  -->
+    <section class="text">
+      <h2 class="spacer">About Me</h2>
+      <hr>
+      <p class="about">I'm a psychologyst and professional designer who loves to get inspiration from nature, daily moments and emotions thurning them into enjoyble works. Some text about me. Some text about me.</p>
+    </section>
+<!--   Text End   -->
+
+<!--   Skills Start   -->
+    <section class="skills">
+
+      <h2>Skills</h2>
+      <hr>
+      <p class="illus">Illustrator</p>
+        <div class="illuskill">
+          <div class="illustrator">75%</div>
+        </div>
+      <p class="webdev">Web Development</p>
+      <div class="webskill">
+        <div class="webbar">65%</div>
+      </div>
+      <p class="photo">Photoshop</p>
+      <div class="photoskill">
+        <div class="photoshop">55%</div>
+      </div>
+      <p class="inde">InDesign</p>
+      <div class="inskill">
+        <div class="indesign">70%</div>
+      </div>
+      <p class="ux-ui">UX/UI</p>
+      <div class="uxuiskill">
+        <div class="uxui">60%</div>
+      </div>
+
+<!--    Skills End    -->
+
+<!--    Accolades    -->
+      <div class="accolades">
+        <p>55+ Projects Completed</p>
+        <p>100+ Happy Clients</p>
+        <p>100% Communication</p>
+      </div>
+
+      <button class='resume2'><i class="fa fa-download"></i>  Download Resume</button>
+
+
+
+
+    </section>
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+</main>
+
+</html>
